@@ -24,9 +24,9 @@ import {EtatRendezVousDto}  from '/pages/controller/model/EtatRendezVous.model';
 import {EtatRendezVousCriteria} from "/pages/controller/criteria/EtatRendezVousCriteria.model";
 
 
-import Edit from '/pages/module/admin/view/commun/etatRendezVous-admin/edit-admin/etatRendezVous-edit-admin.component';
-import Create from '/pages/module/admin/view/commun/etatRendezVous-admin/create-admin/etatRendezVous-create-admin.component';
-import View from '/pages/module/admin/view/commun/etatRendezVous-admin/view-admin/etatRendezVous-view-admin.component';
+import Edit from '/pages/module/admin/view/commun/etat-rendez-vous-admin/edit-admin/etat-rendez-vous-edit-admin.component';
+import Create from '/pages/module/admin/view/commun/etat-rendez-vous-admin/create-admin/etat-rendez-vous-create-admin.component';
+import View from '/pages/module/admin/view/commun/etat-rendez-vous-admin/view-admin/etat-rendez-vous-view-admin.component';
 
 const List = () => {
 

@@ -39,58 +39,69 @@ const AppMenu = () => {
                     ]
                 },
                 {
-                    label: 'Crud',
+                    label: 'Actor Management',
                     icon: 'pi pi-fw pi-pencil',
                     items: [
-                                        {
-                     label: 'Dose',
-                     to: '/module/admin/view/rdv/dose-admin/list-admin/dose-list-admin.component'
+                        {
+                            label: 'Liste medecin',
+                            to: '/module/admin/view/actor/medecin-admin/list-admin/medecin-list-admin.component'
+                        },
+                        {
+                            label: 'Liste patient',
+                            to: '/module/admin/view/actor/patient-admin/list-admin/patient-list-admin.component'
+                        },
+                    ]
+                },
+                {
+                    label: 'RDV Management',
+                    icon: 'pi pi-fw pi-pencil',
+                    items: [
+                        {
+                            label: 'Liste dose',
+                            to: '/module/admin/view/rdv/dose-admin/list-admin/dose-list-admin.component'
+                        },
+                        {
+                            label: 'Liste effet indesirable',
+                            to: '/module/admin/view/rdv/effet-indesirable-admin/list-admin/effet-indesirable-list-admin.component'
+                        },
+                        {
+                            label: 'Liste rendez vous',
+                            to: '/module/admin/view/rdv/rendez-vous-admin/list-admin/rendez-vous-list-admin.component'
+                        },
+                    ]
+                },
+                {
+                    label: 'Referentiel Management',
+                    icon: 'pi pi-fw pi-pencil',
+                    items: [
+                      {
+                      label: 'Liste categorie rdv',
+                     to: '/module/admin/view/commun/categorie-rdv-admin/list-admin/categorie-rdv-list-admin.component'
                       },
                       {
-                     label: 'CategorieRdv',
-                     to: '/module/admin/view/commun/categorieRdv-admin/list-admin/categorieRdv-list-admin.component'
+                      label: 'Liste etat rendez vous',
+                     to: '/module/admin/view/commun/etat-rendez-vous-admin/list-admin/etat-rendez-vous-list-admin.component'
                       },
                       {
-                     label: 'EtatRendezVous',
-                     to: '/module/admin/view/commun/etatRendezVous-admin/list-admin/etatRendezVous-list-admin.component'
-                      },
-                      {
-                     label: 'Medecin',
-                     to: '/module/admin/view/actor/medecin-admin/list-admin/medecin-list-admin.component'
-                      },
-                      {
-                     label: 'Gender',
+                      label: 'Liste gender',
                      to: '/module/admin/view/commun/gender-admin/list-admin/gender-list-admin.component'
                       },
                       {
-                     label: 'Center',
+                      label: 'Liste center',
                      to: '/module/admin/view/commun/center-admin/list-admin/center-list-admin.component'
                       },
                       {
-                     label: 'EffetIndesirable',
-                     to: '/module/admin/view/rdv/effetIndesirable-admin/list-admin/effetIndesirable-list-admin.component'
+                      label: 'Liste etat dose',
+                     to: '/module/admin/view/commun/etat-dose-admin/list-admin/etat-dose-list-admin.component'
                       },
                       {
-                     label: 'RendezVous',
-                     to: '/module/admin/view/rdv/rendezVous-admin/list-admin/rendezVous-list-admin.component'
-                      },
-                      {
-                     label: 'Patient',
-                     to: '/module/admin/view/actor/patient-admin/list-admin/patient-list-admin.component'
-                      },
-                      {
-                     label: 'EtatDose',
-                     to: '/module/admin/view/commun/etatDose-admin/list-admin/etatDose-list-admin.component'
-                      },
-                      {
-                     label: 'Quartier',
+                      label: 'Liste quartier',
                      to: '/module/admin/view/commun/quartier-admin/list-admin/quartier-list-admin.component'
                       },
                       {
-                     label: 'Ville',
+                      label: 'Liste ville',
                      to: '/module/admin/view/commun/ville-admin/list-admin/ville-list-admin.component'
                       },
-
                     ]
                 },
                 {

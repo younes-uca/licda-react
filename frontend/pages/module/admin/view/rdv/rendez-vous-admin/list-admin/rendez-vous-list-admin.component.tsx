@@ -23,26 +23,26 @@ import {RendezVousService} from '/pages/controller/service/RendezVous.service';
 import {RendezVousDto}  from '/pages/controller/model/RendezVous.model';
 import {RendezVousCriteria} from "/pages/controller/criteria/RendezVousCriteria.model";
 
-import {CategorieRdvDto} from '/pages/controller/model/CategorieRdv.model';
-import {CategorieRdvService} from '/pages/controller/service/CategorieRdv.service';
-import {EtatRendezVousDto} from '/pages/controller/model/EtatRendezVous.model';
-import {EtatRendezVousService} from '/pages/controller/service/EtatRendezVous.service';
 import {EtatDoseDto} from '/pages/controller/model/EtatDose.model';
 import {EtatDoseService} from '/pages/controller/service/EtatDose.service';
-import {MedecinDto} from '/pages/controller/model/Medecin.model';
-import {MedecinService} from '/pages/controller/service/Medecin.service';
-import {DoseDto} from '/pages/controller/model/Dose.model';
-import {DoseService} from '/pages/controller/service/Dose.service';
-import {CenterDto} from '/pages/controller/model/Center.model';
-import {CenterService} from '/pages/controller/service/Center.service';
-import {EffetIndesirableDto} from '/pages/controller/model/EffetIndesirable.model';
-import {EffetIndesirableService} from '/pages/controller/service/EffetIndesirable.service';
+import {EtatRendezVousDto} from '/pages/controller/model/EtatRendezVous.model';
+import {EtatRendezVousService} from '/pages/controller/service/EtatRendezVous.service';
 import {PatientDto} from '/pages/controller/model/Patient.model';
 import {PatientService} from '/pages/controller/service/Patient.service';
+import {CategorieRdvDto} from '/pages/controller/model/CategorieRdv.model';
+import {CategorieRdvService} from '/pages/controller/service/CategorieRdv.service';
+import {DoseDto} from '/pages/controller/model/Dose.model';
+import {DoseService} from '/pages/controller/service/Dose.service';
+import {EffetIndesirableDto} from '/pages/controller/model/EffetIndesirable.model';
+import {EffetIndesirableService} from '/pages/controller/service/EffetIndesirable.service';
+import {CenterDto} from '/pages/controller/model/Center.model';
+import {CenterService} from '/pages/controller/service/Center.service';
+import {MedecinDto} from '/pages/controller/model/Medecin.model';
+import {MedecinService} from '/pages/controller/service/Medecin.service';
 
-import Edit from '/pages/module/admin/view/rdv/rendezVous-admin/edit-admin/rendezVous-edit-admin.component';
-import Create from '/pages/module/admin/view/rdv/rendezVous-admin/create-admin/rendezVous-create-admin.component';
-import View from '/pages/module/admin/view/rdv/rendezVous-admin/view-admin/rendezVous-view-admin.component';
+import Edit from '/pages/module/admin/view/rdv/rendez-vous-admin/edit-admin/rendez-vous-edit-admin.component';
+import Create from '/pages/module/admin/view/rdv/rendez-vous-admin/create-admin/rendez-vous-create-admin.component';
+import View from '/pages/module/admin/view/rdv/rendez-vous-admin/view-admin/rendez-vous-view-admin.component';
 
 const List = () => {
 
@@ -66,22 +66,22 @@ const List = () => {
     const [findByCriteriaShow, setFindByCriteriaShow] = useState(false);
     const [isSearchTriggered, setIsSearchTriggered] = useState(false);
 
-    const [categorieRdvs, setCategorieRdvs] = useState<CategorieRdvDto[]>([]);
-    type CategorieRdvResponse = AxiosResponse<CategorieRdvDto[]>;
-    const [etatRendezVouss, setEtatRendezVouss] = useState<EtatRendezVousDto[]>([]);
-    type EtatRendezVousResponse = AxiosResponse<EtatRendezVousDto[]>;
     const [etatDoses, setEtatDoses] = useState<EtatDoseDto[]>([]);
     type EtatDoseResponse = AxiosResponse<EtatDoseDto[]>;
-    const [medecins, setMedecins] = useState<MedecinDto[]>([]);
-    type MedecinResponse = AxiosResponse<MedecinDto[]>;
-    const [doses, setDoses] = useState<DoseDto[]>([]);
-    type DoseResponse = AxiosResponse<DoseDto[]>;
-    const [centers, setCenters] = useState<CenterDto[]>([]);
-    type CenterResponse = AxiosResponse<CenterDto[]>;
-    const [effetIndesirables, setEffetIndesirables] = useState<EffetIndesirableDto[]>([]);
-    type EffetIndesirableResponse = AxiosResponse<EffetIndesirableDto[]>;
+    const [etatRendezVouss, setEtatRendezVouss] = useState<EtatRendezVousDto[]>([]);
+    type EtatRendezVousResponse = AxiosResponse<EtatRendezVousDto[]>;
     const [patients, setPatients] = useState<PatientDto[]>([]);
     type PatientResponse = AxiosResponse<PatientDto[]>;
+    const [categorieRdvs, setCategorieRdvs] = useState<CategorieRdvDto[]>([]);
+    type CategorieRdvResponse = AxiosResponse<CategorieRdvDto[]>;
+    const [doses, setDoses] = useState<DoseDto[]>([]);
+    type DoseResponse = AxiosResponse<DoseDto[]>;
+    const [effetIndesirables, setEffetIndesirables] = useState<EffetIndesirableDto[]>([]);
+    type EffetIndesirableResponse = AxiosResponse<EffetIndesirableDto[]>;
+    const [centers, setCenters] = useState<CenterDto[]>([]);
+    type CenterResponse = AxiosResponse<CenterDto[]>;
+    const [medecins, setMedecins] = useState<MedecinDto[]>([]);
+    type MedecinResponse = AxiosResponse<MedecinDto[]>;
 
     const showSearch = () => { setFindByCriteriaShow(!findByCriteriaShow); };
 

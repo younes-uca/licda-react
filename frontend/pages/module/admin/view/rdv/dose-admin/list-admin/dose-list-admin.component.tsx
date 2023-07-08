@@ -23,10 +23,10 @@ import {DoseService} from '/pages/controller/service/Dose.service';
 import {DoseDto}  from '/pages/controller/model/Dose.model';
 import {DoseCriteria} from "/pages/controller/criteria/DoseCriteria.model";
 
-import {EtatDoseDto} from '/pages/controller/model/EtatDose.model';
-import {EtatDoseService} from '/pages/controller/service/EtatDose.service';
 import {RendezVousDto} from '/pages/controller/model/RendezVous.model';
 import {RendezVousService} from '/pages/controller/service/RendezVous.service';
+import {EtatDoseDto} from '/pages/controller/model/EtatDose.model';
+import {EtatDoseService} from '/pages/controller/service/EtatDose.service';
 
 import Edit from '/pages/module/admin/view/rdv/dose-admin/edit-admin/dose-edit-admin.component';
 import Create from '/pages/module/admin/view/rdv/dose-admin/create-admin/dose-create-admin.component';
@@ -54,10 +54,10 @@ const List = () => {
     const [findByCriteriaShow, setFindByCriteriaShow] = useState(false);
     const [isSearchTriggered, setIsSearchTriggered] = useState(false);
 
-    const [etatDoses, setEtatDoses] = useState<EtatDoseDto[]>([]);
-    type EtatDoseResponse = AxiosResponse<EtatDoseDto[]>;
     const [rendezVouss, setRendezVouss] = useState<RendezVousDto[]>([]);
     type RendezVousResponse = AxiosResponse<RendezVousDto[]>;
+    const [etatDoses, setEtatDoses] = useState<EtatDoseDto[]>([]);
+    type EtatDoseResponse = AxiosResponse<EtatDoseDto[]>;
 
     const showSearch = () => { setFindByCriteriaShow(!findByCriteriaShow); };
 

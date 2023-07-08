@@ -23,10 +23,10 @@ import {PatientService} from '/pages/controller/service/Patient.service';
 import {PatientDto}  from '/pages/controller/model/Patient.model';
 import {PatientCriteria} from "/pages/controller/criteria/PatientCriteria.model";
 
-import {VilleDto} from '/pages/controller/model/Ville.model';
-import {VilleService} from '/pages/controller/service/Ville.service';
 import {GenderDto} from '/pages/controller/model/Gender.model';
 import {GenderService} from '/pages/controller/service/Gender.service';
+import {VilleDto} from '/pages/controller/model/Ville.model';
+import {VilleService} from '/pages/controller/service/Ville.service';
 
 import Edit from '/pages/module/admin/view/actor/patient-admin/edit-admin/patient-edit-admin.component';
 import Create from '/pages/module/admin/view/actor/patient-admin/create-admin/patient-create-admin.component';
@@ -54,10 +54,10 @@ const List = () => {
     const [findByCriteriaShow, setFindByCriteriaShow] = useState(false);
     const [isSearchTriggered, setIsSearchTriggered] = useState(false);
 
-    const [villes, setVilles] = useState<VilleDto[]>([]);
-    type VilleResponse = AxiosResponse<VilleDto[]>;
     const [genders, setGenders] = useState<GenderDto[]>([]);
     type GenderResponse = AxiosResponse<GenderDto[]>;
+    const [villes, setVilles] = useState<VilleDto[]>([]);
+    type VilleResponse = AxiosResponse<VilleDto[]>;
 
     const showSearch = () => { setFindByCriteriaShow(!findByCriteriaShow); };
 

@@ -24,9 +24,9 @@ import {CategorieRdvDto}  from '/pages/controller/model/CategorieRdv.model';
 import {CategorieRdvCriteria} from "/pages/controller/criteria/CategorieRdvCriteria.model";
 
 
-import Edit from '/pages/module/admin/view/commun/categorieRdv-admin/edit-admin/categorieRdv-edit-admin.component';
-import Create from '/pages/module/admin/view/commun/categorieRdv-admin/create-admin/categorieRdv-create-admin.component';
-import View from '/pages/module/admin/view/commun/categorieRdv-admin/view-admin/categorieRdv-view-admin.component';
+import Edit from '/pages/module/admin/view/commun/categorie-rdv-admin/edit-admin/categorie-rdv-edit-admin.component';
+import Create from '/pages/module/admin/view/commun/categorie-rdv-admin/create-admin/categorie-rdv-create-admin.component';
+import View from '/pages/module/admin/view/commun/categorie-rdv-admin/view-admin/categorie-rdv-view-admin.component';
 
 const List = () => {
 

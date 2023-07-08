@@ -24,9 +24,9 @@ import {EtatDoseDto}  from '/pages/controller/model/EtatDose.model';
 import {EtatDoseCriteria} from "/pages/controller/criteria/EtatDoseCriteria.model";
 
 
-import Edit from '/pages/module/admin/view/commun/etatDose-admin/edit-admin/etatDose-edit-admin.component';
-import Create from '/pages/module/admin/view/commun/etatDose-admin/create-admin/etatDose-create-admin.component';
-import View from '/pages/module/admin/view/commun/etatDose-admin/view-admin/etatDose-view-admin.component';
+import Edit from '/pages/module/admin/view/commun/etat-dose-admin/edit-admin/etat-dose-edit-admin.component';
+import Create from '/pages/module/admin/view/commun/etat-dose-admin/create-admin/etat-dose-create-admin.component';
+import View from '/pages/module/admin/view/commun/etat-dose-admin/view-admin/etat-dose-view-admin.component';
 
 const List = () => {
 

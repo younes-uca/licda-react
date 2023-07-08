@@ -19,10 +19,10 @@ import {MultiSelect} from "primereact/multiselect";import {MessageService} from 
 import {DoseService} from '/pages/controller/service/Dose.service';
 import  {DoseDto}  from '/pages/controller/model/Dose.model';
 
-import {EtatDoseDto} from '/pages/controller/model/EtatDose.model';
-import {EtatDoseService} from '/pages/controller/service/EtatDose.service';
 import {RendezVousDto} from '/pages/controller/model/RendezVous.model';
 import {RendezVousService} from '/pages/controller/service/RendezVous.service';
+import {EtatDoseDto} from '/pages/controller/model/EtatDose.model';
+import {EtatDoseService} from '/pages/controller/service/EtatDose.service';
 const Edit = ({visible, onClose, showToast, selectedItem, update}) => {
 
     const emptyItem = new DoseDto();
@@ -30,10 +30,10 @@ const Edit = ({visible, onClose, showToast, selectedItem, update}) => {
     const [activeIndex, setActiveIndex] = useState<number>(0);
     const [activeTab, setActiveTab] = useState(0);
     const [item, setItem] = useState<DoseDto>( emptyItem);
-    const [etatDoses, setEtatDoses] = useState<EtatDoseDto[]>([]);
-    type EtatDoseResponse = AxiosResponse<EtatDoseDto[]>;
     const [rendezVouss, setRendezVouss] = useState<RendezVousDto[]>([]);
     type RendezVousResponse = AxiosResponse<RendezVousDto[]>;
+    const [etatDoses, setEtatDoses] = useState<EtatDoseDto[]>([]);
+    type EtatDoseResponse = AxiosResponse<EtatDoseDto[]>;
 
     useEffect(() => {
         const fetchData = async () => {

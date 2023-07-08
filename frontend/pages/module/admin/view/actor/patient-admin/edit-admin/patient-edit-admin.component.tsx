@@ -19,10 +19,10 @@ import {MultiSelect} from "primereact/multiselect";import {MessageService} from 
 import {PatientService} from '/pages/controller/service/Patient.service';
 import  {PatientDto}  from '/pages/controller/model/Patient.model';
 
-import {VilleDto} from '/pages/controller/model/Ville.model';
-import {VilleService} from '/pages/controller/service/Ville.service';
 import {GenderDto} from '/pages/controller/model/Gender.model';
 import {GenderService} from '/pages/controller/service/Gender.service';
+import {VilleDto} from '/pages/controller/model/Ville.model';
+import {VilleService} from '/pages/controller/service/Ville.service';
 const Edit = ({visible, onClose, showToast, selectedItem, update}) => {
 
     const emptyItem = new PatientDto();
@@ -30,10 +30,10 @@ const Edit = ({visible, onClose, showToast, selectedItem, update}) => {
     const [activeIndex, setActiveIndex] = useState<number>(0);
     const [activeTab, setActiveTab] = useState(0);
     const [item, setItem] = useState<PatientDto>( emptyItem);
-    const [villes, setVilles] = useState<VilleDto[]>([]);
-    type VilleResponse = AxiosResponse<VilleDto[]>;
     const [genders, setGenders] = useState<GenderDto[]>([]);
     type GenderResponse = AxiosResponse<GenderDto[]>;
+    const [villes, setVilles] = useState<VilleDto[]>([]);
+    type VilleResponse = AxiosResponse<VilleDto[]>;
 
     useEffect(() => {
         const fetchData = async () => {

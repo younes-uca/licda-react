@@ -26,9 +26,9 @@ import {EffetIndesirableCriteria} from "/pages/controller/criteria/EffetIndesira
 import {RendezVousDto} from '/pages/controller/model/RendezVous.model';
 import {RendezVousService} from '/pages/controller/service/RendezVous.service';
 
-import Edit from '/pages/module/admin/view/rdv/effetIndesirable-admin/edit-admin/effetIndesirable-edit-admin.component';
-import Create from '/pages/module/admin/view/rdv/effetIndesirable-admin/create-admin/effetIndesirable-create-admin.component';
-import View from '/pages/module/admin/view/rdv/effetIndesirable-admin/view-admin/effetIndesirable-view-admin.component';
+import Edit from '/pages/module/admin/view/rdv/effet-indesirable-admin/edit-admin/effet-indesirable-edit-admin.component';
+import Create from '/pages/module/admin/view/rdv/effet-indesirable-admin/create-admin/effet-indesirable-create-admin.component';
+import View from '/pages/module/admin/view/rdv/effet-indesirable-admin/view-admin/effet-indesirable-view-admin.component';
 
 const List = () => {
 
